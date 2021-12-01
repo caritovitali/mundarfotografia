@@ -1,0 +1,150 @@
+body {
+  font-family: "Nunito";
+  font-style: normal;
+  font-size: 16px;
+  background-color: #fafafa;
+  margin: 2px; }
+
+h2 {
+  color: #565651; }
+
+h3 {
+  color: #565651; }
+
+.colorTexto {
+  color: #565651; }
+
+section {
+  margin: 10px;
+  padding: 20px; }
+
+.section1 {
+  background-color: burlywood; }
+
+.section2 {
+  border: 0.5px black solid; }
+
+.bloque {
+  background-color: #cccccc;
+  border-radius: 15px;
+  padding: 20px;
+  display: block;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px; }
+
+.bloque__titulo {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px; }
+
+.bloque__parrafo {
+  line-height: 28px;
+  font-size: 1rem; }
+
+.bloque_boton--btn--center {
+  display: block; }
+
+.btn-primary {
+  background-color: #254a66;
+  border-color: #254a66; }
+
+.btn-primary:hover {
+  background-color: #f88840;
+  border-color: #f88840; }
+
+.tipsBloque {
+  background-color: #bbbbbb;
+  border-radius: 15px;
+  padding: 20px;
+  display: block;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px; }
+
+.tipsBloque__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px; }
+
+.tipsBloque__parrafo {
+  line-height: 28px;
+  font-size: 1rem; }
+
+.tipsBloque__boton--btn--derecha {
+  position: absolute;
+  right: 20px;
+  bottom: -25px; }
+
+.tittleSection {
+  font-family: "Nunito";
+  text-align: center; }
+
+hr {
+  color: #f88840;
+  margin-right: 2%;
+  margin-left: 2%;
+  border: 1px solid; }
+
+.galeriaScale img:hover {
+  transition: 2s;
+  transform: scale(1.1); }
+
+.sobreMiScale img:hover {
+  transition: 3s;
+  transform: scale(1.1); }
+
+.box {
+  height: 200px;
+  width: 1200px; }
+
+.textoHeader {
+  top: 45%;
+  right: 20px;
+  position: absolute; }
+
+nav {
+  background: rgba(0, 0, 0, 0.2); }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
+@media only screen and (max-width: 480px) {
+  .logoMundar {
+    width: 40px; } }
+
+footer {
+  background-color: grey;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0; }
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center; }
+
+.redesSociales li a {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  line-height: 2; }
+
+.redesSociales li a img {
+  height: 30px;
+  width: 30px;
+  color: #ffff; }
+
+.textoFooter {
+  color: #fafafa; }
+
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--instagram {
+  background-color: #DD2A7B; }

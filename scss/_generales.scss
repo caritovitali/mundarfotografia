@@ -1,0 +1,119 @@
+body{
+    font-family: "Nunito";
+    font-style: normal;
+    font-size: 16px;
+    background-color: $colorTerciario;
+    margin: 2px;
+}
+
+h2{
+    color: $colorTextoPrimario;
+
+}
+h3{
+    color: $colorTextoPrimario;
+}
+.colorTexto { 
+    color: #565651;
+
+}
+
+section{
+    margin: 10px;
+    padding: 20px;
+}
+.section1{
+    background-color: burlywood;
+}
+.section2{
+    border: 0.5px black solid;
+}
+
+.bloque{
+    background-color: #cccccc;
+	border-radius: 15px;
+	padding: 20px;
+	display: block;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px; 
+}
+.bloque__titulo{
+    text-align: center;
+    font-size:1.5rem;
+	margin-bottom: 20px;
+}
+.bloque__parrafo{
+    line-height: 28px;
+	font-size:1rem;
+}
+.bloque_boton--btn--center{
+display: block;
+
+}
+
+.btn-primary{
+    background-color: $colorPrimario;
+    border-color: $colorPrimario;   
+}
+.btn-primary:hover{
+    background-color: $colorSecundario;
+    border-color: $colorSecundario;
+}
+
+
+.tipsBloque {
+    background-color: #bbbbbb;
+	border-radius: 15px;
+	padding: 20px;
+	display: block;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px; 
+}
+
+
+.tipsBloque__titulo {
+	font-size:1.5rem;
+	margin-bottom: 20px;
+}
+
+.tipsBloque__parrafo {
+	line-height: 28px;
+	font-size:1rem;
+}
+
+.tipsBloque__boton--btn--derecha {
+	position: absolute;
+	right: 20px;
+	bottom: -25px;
+}
+.tittleSection{
+    font-family: "Nunito";
+    text-align: center;
+}
+
+hr {
+    color: $colorSecundario;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 1px solid;
+}
+
+.galeriaScale img:hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+.sobreMiScale img:hover {
+    transition: 3s;
+    transform: scale(1.1);
+}
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+
+ .box {
+    @include sizes(1200px, 200px);
+ }
+ 

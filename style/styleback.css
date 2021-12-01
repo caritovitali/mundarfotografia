@@ -1,0 +1,243 @@
+body{
+    font-family: "Nunito";
+    font-style: normal;
+    font-size: 16px;
+    background-color: #fafafa;
+    margin: 2px;
+}
+.fondo {
+    background: url(../media/imagenes/fondo.JPG) no-repeat center;
+    height: 720px;
+    background-size: cover;
+}
+h1{ 
+    font-weight: bold;
+    color: #565651;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+
+}
+
+.textoHeader{
+    top: 45%;
+    right: 20px;
+    position: absolute;
+
+
+}
+.textoHeader h2{
+    color: #254A66;
+}
+.colorTexto { 
+    color: #565651;
+
+}
+h2{
+    color: #565651;
+
+}
+h3{
+    color: #565651;
+    text-decoration: underline;
+}
+
+table{
+    border-spacing: 1px;
+}
+th{
+    background-color: #f88840; 
+    color: white;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+img{border-radius: 15px;
+
+}
+.active{
+    font-weight: bold;
+    color:#f88840;
+
+}  
+nav{
+    background: rgba(0,0,0, 0.2);
+} 
+.navGrid{
+    display: grid;
+    grid-template-columns: 50% 10% 10% 10% 10% 10%;
+    grid-template-rows: 100px;
+    grid-column-gap: 2px;
+    grid-row-gap: 8px;
+}
+ .menu{
+  text-align: center;
+}
+.menu li{
+    display: inline-block;
+    margin: 2%;
+    position:relative;
+    align-self: center;
+}
+ .menu ul {
+    position: absolute;
+    display: none;
+   /* width: 80px; */
+    background-color: burlywood;
+    text-align: left;
+    left: 0px;
+    padding: 5px 0;
+    min-width: 120px;
+    font-size: 14px;
+    border: 0.5px black solid;
+    
+ }
+ .menu ul li {
+    display: block;
+    text-align: left;
+ }
+ .menu li:hover ul {
+    display:block;
+ }
+ 
+
+.listaTabla{
+    list-style-type: upper-roman;
+}
+.fondoFooter{
+    background-color: grey;
+    padding: 5px;
+}
+.redesSociales{
+    color : white;
+    float: right;
+}
+section{
+    margin: 10px;
+    padding: 20px;
+}
+.section1{
+    background-color: burlywood;
+}
+.section2{
+    border: 0.5px black solid;
+}
+.galeriaImagenes{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: stretch;
+}
+.flexboxTips{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 500 px;
+}
+.flexboxTips .section1{
+    width: 280px;
+}
+.flexboxTips .section2{
+    width: 280px;
+}
+.tips{
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.flexboxContacto{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    height: 500 px;
+}
+
+.flexboxContacto .section2{
+    width: 280px;
+}
+
+.logoMundar{
+    text-align: center;
+    display: block;
+}
+
+.galeriaGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% ;
+    grid-template-rows: 80px;
+    grid-column-gap: 13%;
+    grid-row-gap: 8px;
+    height: 300px;
+}
+.galeriaGrid div{
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+.galeriaGrid div h3{
+ text-align: center;
+ color: #254a66;
+}
+.footerGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px;
+    grid-column-gap: 2px;
+    grid-row-gap: 8px;
+}
+.footerGrid .mundar{
+    float: left;
+    align-self: center;
+}
+.footerGrid .redesSociales img{
+    float: right;
+    align-self: center;
+}
+.transicion:hover {
+    transition: 3s;
+    font-size: 2rem;
+}
+.galeriaScale img:hover {
+    transform: scale(1.2);
+}
+.transicionMenu li a:hover {
+    transition: 2s;
+    font-size: 1.3rem;
+}
+
+@media only screen and  (max-width: 480px) {
+	.galeriaGrid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;
+      }
+      .border {
+    	border: 2px solid black;
+    	background-color:sandybrown;
+     }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+	.galeriaGrid {
+            grid-template-columns: repeat(3, 1fr);
+      }
+      .border {
+    	border: 2px solid black;
+    	background-color:springgreen;
+     }
+}
+
+@media  only screen and (min-width: 721px) and   (max-width: 1200px) {
+	.galeriaGrid {
+            grid-template-columns: repeat(4, 1fr);
+      }
+      .border {
+    	border: 4px solid black;
+    	background-color:chocolate;
+     }
+}
