@@ -60,7 +60,21 @@ display: block;
     background-color: $colorSecundario;
     border-color: $colorSecundario;
 }
+.btn-outline-primary{
+    color: $colorPrimario;
+    border-color: $colorPrimario; 
 
+}
+.btn-outline-primary:hover{
+    background-color: $colorSecundario;
+    border-color: $colorSecundario;
+
+}
+.btn-outline-primary.active{
+    background-color: $colorPrimario;
+    border-color: $colorPrimario;
+
+}
 
 .tipsBloque {
     background-color: #bbbbbb;
@@ -105,7 +119,7 @@ hr {
     transform: scale(1.1);
 }
 .sobreMiScale img:hover {
-    transition: 3s;
+    transition: 5s;
     transform: scale(1.1);
 }
 @mixin sizes($width, $height) {
@@ -117,3 +131,23 @@ hr {
     @include sizes(1200px, 200px);
  }
  
+
+ .portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item .item{
+	float:left;
+	margin-bottom:20px;
+}

@@ -53,6 +53,18 @@ section {
   background-color: #f88840;
   border-color: #f88840; }
 
+.btn-outline-primary {
+  color: #254a66;
+  border-color: #254a66; }
+
+.btn-outline-primary:hover {
+  background-color: #f88840;
+  border-color: #f88840; }
+
+.btn-outline-primary.active {
+  background-color: #254a66;
+  border-color: #254a66; }
+
 .tipsBloque {
   background-color: #bbbbbb;
   border-radius: 15px;
@@ -90,12 +102,30 @@ hr {
   transform: scale(1.1); }
 
 .sobreMiScale img:hover {
-  transition: 3s;
+  transition: 5s;
   transform: scale(1.1); }
 
 .box {
   height: 200px;
   width: 1200px; }
+
+.portfolio-menu {
+  text-align: center; }
+
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all .5s ease; }
+
+.portfolio-item .item {
+  float: left;
+  margin-bottom: 20px; }
 
 .textoHeader {
   top: 45%;
@@ -114,7 +144,7 @@ nav {
     width: 40px; } }
 
 footer {
-  background-color: grey;
+  background-color: #dbdada;
   width: 100%;
   height: 100px;
   padding: 50px 0 0 0; }
@@ -130,7 +160,8 @@ footer h5 {
   font-size: 20px;
   text-align: center;
   display: block;
-  line-height: 2; }
+  line-height: 2;
+  border-radius: 25px; }
 
 .redesSociales li a img {
   height: 30px;
@@ -140,11 +171,11 @@ footer h5 {
 .textoFooter {
   color: #fafafa; }
 
-.btn--twitter {
+.btn--twitter:hover {
   background-color: #55acee; }
 
-.btn--facebook {
+.btn--facebook:hover {
   background-color: #3a5795; }
 
-.btn--instagram {
+.btn--instagram:hover {
   background-color: #DD2A7B; }
