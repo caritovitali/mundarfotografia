@@ -1,3 +1,8 @@
+@media screen and (max-width: 580px) {
+  .navbar {
+    position: relative !important;
+    background-color: #254a66; } }
+
 body {
   font-family: "Nunito";
   font-style: normal;
