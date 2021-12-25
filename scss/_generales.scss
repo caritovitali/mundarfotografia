@@ -151,3 +151,21 @@ hr {
 	float:left;
 	margin-bottom:20px;
 }
+
+.redes-fixed {
+    padding: 15px 8px 15px 8px;
+    background: #F88840;
+    position: fixed;
+    left: 0;
+    top: 37%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 55;
+}
+.redes-fixed a{
+display: block;
+color:#254a66;
+}
+.redes-fixed a:hover{
+    color:#ffffff;
+    }

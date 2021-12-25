@@ -1,7 +1,7 @@
 @media screen and (max-width: 580px) {
   .navbar {
     position: relative !important;
-    background-color: #254a66; } }
+    background-color: #254a66 !important; } }
 
 body {
   font-family: "Nunito";
@@ -132,6 +132,23 @@ hr {
   float: left;
   margin-bottom: 20px; }
 
+.redes-fixed {
+  padding: 15px 8px 15px 8px;
+  background: #F88840;
+  position: fixed;
+  left: 0;
+  top: 37%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 55; }
+
+.redes-fixed a {
+  display: block;
+  color: #254a66; }
+
+.redes-fixed a:hover {
+  color: #ffffff; }
+
 .textoHeader {
   top: 45%;
   right: 20px;
@@ -166,9 +183,13 @@ footer h5 {
   text-align: center;
   display: block;
   line-height: 2;
-  border-radius: 25px; }
+  border-radius: 25px;
+  color: #254a66; }
 
-.redesSociales li a img {
+.redesSociales li a:hover {
+  color: #ffff; }
+
+.redesSociales li img {
   height: 30px;
   width: 30px;
   color: #ffff; }

@@ -9,22 +9,32 @@ footer h5{
 	font-weight: 900;
 	text-align: center;
 }
-.redesSociales li a{
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    display: block;
-    line-height: 2;
-    border-radius: 25px;
+.redesSociales{
+    li{
+        a{
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            line-height: 2;
+            border-radius: 25px;
+            color:#254a66;
 
-}
-.redesSociales li a img{
-    height: 30px;
-    width: 30px;
-    color: #ffff;
+        }
+        a:hover{
+            color:#ffff; 
+        }
+        img{
+            height: 30px;
+            width: 30px;
+            color: #ffff;
+        
+        }
 
+    }
 }
+
 .textoFooter{
     color: $colorTerciario;
 }
