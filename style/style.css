@@ -7,8 +7,7 @@ body {
   font-family: "Nunito";
   font-style: normal;
   font-size: 16px;
-  background-color: #fafafa;
-  margin: 2px; }
+  background-color: #fafafa; }
 
 h2 {
   color: #565651; }
@@ -58,6 +57,10 @@ section {
   background-color: #f88840;
   border-color: #f88840; }
 
+.btn-primary:focus {
+  background-color: #254a66;
+  border-color: #254a66; }
+
 .btn-outline-primary {
   color: #254a66;
   border-color: #254a66; }
@@ -102,10 +105,6 @@ hr {
   margin-left: 2%;
   border: 1px solid; }
 
-.galeriaScale img:hover {
-  transition: 2s;
-  transform: scale(1.1); }
-
 .sobreMiScale img:hover {
   transition: 5s;
   transform: scale(1.1); }
@@ -116,21 +115,42 @@ hr {
 
 .portfolio-menu {
   text-align: center; }
-
-.portfolio-menu ul li {
-  display: inline-block;
-  margin: 0;
-  list-style: none;
-  cursor: pointer;
-  -webkit-transition: all 05s ease;
-  -moz-transition: all 05s ease;
-  -ms-transition: all 05s ease;
-  -o-transition: all 05s ease;
-  transition: all .5s ease; }
+  .portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all .5s ease; }
 
 .portfolio-item .item {
   float: left;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
+
+.portfolio-item .item:hover {
+  opacity: 0.5; }
+  .portfolio-item .item:hover .item-info {
+    display: inline;
+    overflow: visible; }
+
+.item .item-info {
+  position: absolute;
+  left: 45px;
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  height: auto;
+  width: auto; }
+
+.galeriaScale img:hover {
+  transition: 2s;
+  transform: scale(1.1); }
 
 .colorIcons {
   color: #f88840; }
@@ -167,7 +187,9 @@ nav {
 
 @media only screen and (max-width: 480px) {
   .logoMundar {
-    width: 50px; } }
+    width: 50px !important; }
+  .logoMundarMobile {
+    width: 25px; } }
 
 footer {
   background-color: #dbdada;

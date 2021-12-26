@@ -3,7 +3,6 @@ body{
     font-style: normal;
     font-size: 16px;
     background-color: $colorTerciario;
-    margin: 2px;
 }
 h2{
     color: $colorTextoPrimario;
@@ -55,6 +54,10 @@ display: block;
     background-color: $colorSecundario;
     border-color: $colorSecundario;
 }
+.btn-primary:focus {
+    background-color: $colorPrimario;
+    border-color: $colorPrimario;
+}
 .btn-outline-primary{
     color: $colorPrimario;
     border-color: $colorPrimario; 
@@ -101,10 +104,7 @@ hr {
     margin-left: 2%;
     border: 1px solid;
 }
-.galeriaScale img:hover {
-    transition: 2s;
-    transform: scale(1.1);
-}
+
 .sobreMiScale img:hover {
     transition: 5s;
     transform: scale(1.1);
@@ -116,24 +116,63 @@ hr {
  .box {
     @include sizes(1200px, 200px);
  }
- .portfolio-menu{
+
+
+.portfolio-menu{
 	text-align:center;
+    ul{
+        li{
+            display:inline-block;
+            margin:0;
+            list-style:none;
+            cursor:pointer;
+            -webkit-transition:all 05s ease;
+            -moz-transition:all 05s ease;
+            -ms-transition:all 05s ease;
+            -o-transition:all 05s ease;
+            transition:all .5s ease;
+
+        }
+    }
 }
-.portfolio-menu ul li{
-	display:inline-block;
-	margin:0;
-	list-style:none;
-	cursor:pointer;
-	-webkit-transition:all 05s ease;
-	-moz-transition:all 05s ease;
-	-ms-transition:all 05s ease;
-	-o-transition:all 05s ease;
-	transition:all .5s ease;
-}
+
+
 .portfolio-item .item{
 	float:left;
-	margin-bottom:20px;
+    margin-bottom: 20px;
+    position:relative;
 }
+.portfolio-item .item:hover{
+    opacity: 0.5;
+    .item-info{
+        display:inline;
+        overflow: visible;
+        
+      } 
+}
+
+.item{
+
+    .item-info{
+        
+       position:absolute;
+       left:45px;
+       display:none;
+       text-align: center;
+       font-size: 20px;
+       font-weight: 600;
+       color: #fff;
+       height: auto;
+       width: auto;
+     }
+   }
+.galeriaScale img:hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+
 
 .colorIcons{
     color: $colorSecundario
@@ -161,3 +200,5 @@ hr {
         color:#ffffff;
         }
 } 
+
+
