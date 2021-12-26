@@ -5,7 +5,6 @@ body{
     background-color: $colorTerciario;
     margin: 2px;
 }
-
 h2{
     color: $colorTextoPrimario;
 
@@ -17,7 +16,6 @@ h3{
     color: #565651;
 
 }
-
 section{
     margin: 10px;
     padding: 20px;
@@ -28,7 +26,6 @@ section{
 .section2{
     border: 0.5px black solid;
 }
-
 .bloque{
     background-color: #cccccc;
 	border-radius: 15px;
@@ -49,9 +46,7 @@ section{
 }
 .bloque_boton--btn--center{
 display: block;
-
 }
-
 .btn-primary{
     background-color: $colorPrimario;
     border-color: $colorPrimario;   
@@ -63,7 +58,6 @@ display: block;
 .btn-outline-primary{
     color: $colorPrimario;
     border-color: $colorPrimario; 
-
 }
 .btn-outline-primary:hover{
     background-color: $colorSecundario;
@@ -73,7 +67,6 @@ display: block;
 .btn-outline-primary.active{
     background-color: $colorPrimario;
     border-color: $colorPrimario;
-
 }
 
 .tipsBloque {
@@ -85,18 +78,14 @@ display: block;
 	position: relative;
 	margin-bottom: 50px; 
 }
-
-
 .tipsBloque__titulo {
 	font-size:1.5rem;
 	margin-bottom: 20px;
 }
-
 .tipsBloque__parrafo {
 	line-height: 28px;
 	font-size:1rem;
 }
-
 .tipsBloque__boton--btn--derecha {
 	position: absolute;
 	right: 20px;
@@ -106,14 +95,12 @@ display: block;
     font-family: "Nunito";
     text-align: center;
 }
-
 hr {
     color: $colorSecundario;
     margin-right: 2%;
     margin-left: 2%;
     border: 1px solid;
 }
-
 .galeriaScale img:hover {
     transition: 2s;
     transform: scale(1.1);
@@ -126,12 +113,9 @@ hr {
     height: $height;
     width: $width;
  }
-
  .box {
     @include sizes(1200px, 200px);
  }
- 
-
  .portfolio-menu{
 	text-align:center;
 }
@@ -146,26 +130,34 @@ hr {
 	-o-transition:all 05s ease;
 	transition:all .5s ease;
 }
-
 .portfolio-item .item{
 	float:left;
 	margin-bottom:20px;
 }
 
-.redes-fixed {
-    padding: 15px 8px 15px 8px;
-    background: #F88840;
-    position: fixed;
-    left: 0;
-    top: 37%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    z-index: 55;
+.colorIcons{
+    color: $colorSecundario
 }
-.redes-fixed a{
-display: block;
-color:#254a66;
+.colorIcons:hover{
+    color: $colorPrimario;
 }
-.redes-fixed a:hover{
-    color:#ffffff;
-    }
+
+.redes-fixed{
+
+        padding: 15px 8px 15px 8px;
+        background: #F88840;
+        position: fixed;
+        left: 0;
+        top: 37%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: 55;
+    a{
+        display: block;
+        color:#254a66;
+        }
+
+    a:hover{
+        color:#ffffff;
+        }
+} 

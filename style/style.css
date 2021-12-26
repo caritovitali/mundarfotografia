@@ -1,7 +1,7 @@
 @media screen and (max-width: 580px) {
   .navbar {
     position: relative !important;
-    background-color: #254a66 !important; } }
+    background-color: #3e6481 !important; } }
 
 body {
   font-family: "Nunito";
@@ -132,6 +132,12 @@ hr {
   float: left;
   margin-bottom: 20px; }
 
+.colorIcons {
+  color: #f88840; }
+
+.colorIcons:hover {
+  color: #254a66; }
+
 .redes-fixed {
   padding: 15px 8px 15px 8px;
   background: #F88840;
@@ -141,13 +147,11 @@ hr {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   z-index: 55; }
-
-.redes-fixed a {
-  display: block;
-  color: #254a66; }
-
-.redes-fixed a:hover {
-  color: #ffffff; }
+  .redes-fixed a {
+    display: block;
+    color: #254a66; }
+  .redes-fixed a:hover {
+    color: #ffffff; }
 
 .textoHeader {
   top: 45%;
@@ -155,7 +159,7 @@ hr {
   position: absolute; }
 
 nav {
-  background: rgba(0, 0, 0, 0.2); }
+  background: #3e64816b; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 1.5rem;
@@ -163,7 +167,7 @@ nav {
 
 @media only screen and (max-width: 480px) {
   .logoMundar {
-    width: 40px; } }
+    width: 50px; } }
 
 footer {
   background-color: #dbdada;
